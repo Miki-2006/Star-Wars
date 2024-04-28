@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root{
+    background-image: url(https://script-tutorials.com/demos/360/images/stars.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+.logo_class{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    -webkit-text-stroke: 1px gold;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.list{
+    margin-left: 10px;
+    padding: 10px;
+    width: 346px;
+    height: 393px;
+    border-radius: 8px;
+    border: 2px solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.btns{
+    display: flex;
+}
+.btn{
+    border-radius: 4px;
+    border: 1px solid gold;
+    margin: 5px;
+    font-size: 20px;
+    padding: 1px 8px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+    width: 346px;
+    height: 393px;
+    border-radius: 8px;
+    border: 2px solid gold;
+    color: white;
+}
+.link{
+    color: #FFFFFF;
+    transition: 0.4ms;
+    font-size: 30px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.cards{
+    display: flex;
+    gap: 288px;
+}
+.spinner{
+    height: 340px;
+}
+.spin{
+    position: relative;
+    top: 54%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+.data_items{
+    display: flex;
+    flex-direction: column;
+}
+.logo:hover{
+    color: gold;
+    -webkit-text-stroke: 1px gold;
+}
+.item:hover{
+    color: gold;
+}
+.item:focus{
+    color: gold;
+}
+.btn:hover{
+    background-color: gold;
+}
+.link:hover{
+    color: gold;
+    font-weight: 500;
+}
+.link:focus{
+    color: gold;
+    font-weight: 500;
+}
+.link_click{
+    color: gold;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 4px;
+    border-bottom: 1px solid gold;
+}
+
+@media screen and (max-width: 1200px){
+    .cards{
+        gap: 160px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .cards{
+        gap: 80px;
+    }
+}
+@media screen and (max-width: 850px){
+    .cards{
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 800px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #root{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    .ul_pages{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width: 450px){
+    .logo{
+        font-weight: 700;
+        font-size: 40px;    
+    }
+    .spinner{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 550px){
+    .link{
+        font-weight: 300;
+        font-size: 20px;    
+    }
+    .link_click{
+        font-weight: 400;
+        font-size: 20px;  
+    }
+}
+@media screen and (max-width: 380px){
+    .list{
+        width: 256px;
+        height: 303px;
+    }
+    .item{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .info{
+        width: 256px;
+        height: 303px;
+        font-size: 15px;
+    }
+}
+
+
+
